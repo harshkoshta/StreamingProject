@@ -1,0 +1,44 @@
+<head>
+    <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
+
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+</head>
+
+<body>
+
+<audio id="player" controls>     <source src="http://localhost:8080/partialaudio" type="audio/mp3" > Audio will play here </audio>
+<div>
+	<button onclick="document.getElementById('player').play()">Play</button>
+	<button onclick="document.getElementById('player').pause()">Pause</button>
+	<button onclick="document.getElementById('player').volume+=0.1">Volume Up</button>
+	<button onclick="document.getElementById('player').volume-=0.1">Volume Down</button>
+</div> 
+<br>
+<!-- <video
+        id="my-video"
+        class="video-js"
+        controls
+        preload="auto"
+        width="720px"
+        height="420px"
+        poster="D:\MY_VIDEO_POSTER.jpg"
+        data-setup="{}"
+>
+    <!--<source src="D:\MY_VIDEO.mp4" type="video/mp4" />
+    <source src="D:\MY_VIDEO.webm" type="video/webm" /> -->
+    <!-- <source src="https://videos.pexels.com/video-files/27922277/12264207_2560_1440_30fps.mp4" type="video/mp4" /> -->
+    <source src="http://localhost:8080/partial" type="video/mp4" />
+    <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a>
+    </p>
+</video> -->
+
+
+
+
+<script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
+</body>
